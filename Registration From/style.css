@@ -1,0 +1,146 @@
+@import url(@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Source+Code+Pro:wght@300&display=swap););
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    --var-primary-color: #2888E8FF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.1rem;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+button, input{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent transparent;
+    color:#141212;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------------Registration Page Stylings----------------------------------------------------------------
+*/
+
+.registration-header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("job-interview-conversation_74855-7566.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141212;
+}
+
+.logo a {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-----Registration Page Styling-----*/
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration , .login{
+    min-height: 30rem;
+    min-width: 40vw;
+    background-color: aquamarine;
+
+}
+
+.grid-two--coloum{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-text{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("17213137_rm373batch13-028.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+.form-text p {
+    width:30ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.form-text button {
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.form-text button:hover {
+    background-color: transparent;
+    color: #fff;
+}
