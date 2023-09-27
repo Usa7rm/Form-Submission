@@ -1,4 +1,4 @@
-@import url(@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Source+Code+Pro:wght@300&display=swap););
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Source+Code+Pro:wght@300&display=swap);
 
 *{
     margin: 0;
@@ -69,7 +69,7 @@ button, input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #141212;
+    background-color: #f1000000;
 }
 
 .logo a {
@@ -105,7 +105,7 @@ main {
 .registration , .login{
     min-height: 30rem;
     min-width: 40vw;
-    background-color: aquamarine;
+    background-color: transparent;
 
 }
 
@@ -128,6 +128,13 @@ main {
     padding: 3rem 2rem;
 }
 
+.login .form-text{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("handshake.jpg");
+    background-position: center;
+    background-size:cover;
+
+}
+
 .form-text p {
     width:30ch;
     text-align: center;
@@ -144,3 +151,67 @@ main {
     background-color: transparent;
     color: #fff;
 }
+
+.registration-form , .login-form {
+    padding: 3rem 0 3rem 0;
+    width: 100%;
+    height: 45vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.registration-form p, .login-form p {
+    margin: 1rem 0 0.7rem 0;
+}
+
+.social-icons{
+    display: flex;
+    gap: 1.4rem;
+    margin: 1.6rem 0 0.7rem;
+}
+.fa-brands {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border:0.1rem solid #3e3b3b;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field.submit {
+    margin: 0 0.5rem 0 0.5rem;
+    justify-content: center;
+}
+
+input{
+    width: 20rem;
+    margin: 0.7rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.06rem;
+}
+
+input[type="submit"]{
+    margin-top: 1rem;
+    margin-width: 10rem;
+    background-color: var(--var-primary-color);
+    color: #fff; 
+}
+
+.registration:not(.login-section--display){
+    display: none;
+}
+
+.login-section--display .registration{
+    display: block;
+}
+
+.login-section--display .login{
+    display: none;
+}
+
